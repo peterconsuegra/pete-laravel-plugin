@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pete\WordPressPlusLaravel\Http;
+namespace Pete\LaravelImport\Http;
 
 use App\Services\OServer;
 use App\Services\PeteOption;
@@ -14,14 +14,14 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
-use Pete\WordPressPlusLaravel\Models\Site;
+use Pete\LaravelImport\Models\Site;
 use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Http\JsonResponse;
 /**
  * Controller for WordPress ↔ Laravel integrations (WordPress Plus Laravel).
  */
-class WordPressPlusLaravelController extends Controller
+class LaravelImportController extends Controller
 {
     /**
      * Maximum number of bytes to read from each log file (1 MB).
@@ -334,7 +334,7 @@ class WordPressPlusLaravelController extends Controller
      */
     public function delete(Request $request): RedirectResponse
     {
-        Log::info('Enter in delete WordPressPlusLaravelController');
+        Log::info('Enter in delete LaravelImportController');
 
         $user = Auth::user();
 

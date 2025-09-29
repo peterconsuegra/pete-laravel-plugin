@@ -1,15 +1,15 @@
 <?php
 
-namespace Pete\WordPressPlusLaravel;
+namespace Pete\LaravelImport;
 
 use Illuminate\Support\ServiceProvider;
 
-class WordPressPlusLaravelServiceProvider extends ServiceProvider
+class LaravelImportServiceProvider extends ServiceProvider
 {
     public function register()
     {	
         $this->app->singleton('wordpress-plus-laravel', function ($app) {
-            return new WordPressPlusLaravel;
+            return new LaravelImport;
         });	
     }
 
@@ -21,7 +21,7 @@ class WordPressPlusLaravelServiceProvider extends ServiceProvider
 		
         if ($this->app->runningInConsole()) {
             $this->commands([
-				Console\AdaptWordPressPlusLaravel::class,
+				Console\AdaptLaravelImport::class,
             ]);
         }
 		

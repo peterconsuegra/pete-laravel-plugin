@@ -1,30 +1,30 @@
 <?php
 
-namespace Pete\WordPressPlusLaravel\Console;
+namespace Pete\LaravelImport\Console;
 
 
 use Illuminate\Console\Command;
 use Log;
-use Pete\WordPressPlusLaravel\bin\WpTools;
+use Pete\LaravelImport\bin\WpTools;
 
-class AdaptWordPressPlusLaravel extends Command {
+class AdaptLaravelImport extends Command {
 	
 
-    protected $name = 'adapt_wordpress_plus_laravel';
+    protected $name = 'adapt_laravel_import';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Adapt WordPressPlusLaravel Command';
+    protected $description = 'Adapt LaravelImport Command';
 
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'adapt_wordpress_plus_laravel';
+    protected $signature = 'adapt_laravel_import';
 
     
     public function handle() {

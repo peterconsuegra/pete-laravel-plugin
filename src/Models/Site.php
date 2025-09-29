@@ -1,6 +1,6 @@
 <?php
 
-namespace Pete\WordPressPlusLaravel\Models;
+namespace Pete\LaravelImport\Models;
 
 use App\Models\Site as BaseSite;
 use App\Services\PeteOption;

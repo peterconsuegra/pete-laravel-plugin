@@ -1,6 +1,6 @@
 <?php
 
-namespace Pete\WordPressPlusLaravel\bin;
+namespace Pete\LaravelImport\bin;
 
 use Log;
 

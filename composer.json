@@ -1,6 +1,6 @@
 {
-    "name": "peteconsuegra/wordpress-plus-laravel-plugin",
-    "description": "A WordPress Plus Laravel plugin for WordPress Pete",
+    "name": "peteconsuegra/pete-laravel-plugin",
+    "description": "WordPress Pete Plugin — Create and import Laravel apps in a scalable WordPress environment with free SSL and one-click integration",
     "license": "MIT",
     "authors": [
         {
@@ -10,14 +10,14 @@
     ],
     "autoload": {
         "psr-4": {
-            "Pete\\WordPressPlusLaravel\\": "src/"
+            "Pete\\LaravelImport\\": "src/"
         }
     },
     "minimum-stability": "dev",
 	"extra": {
 	    "laravel": {
 	        "providers": [
-	            "Pete\\WordPressPlusLaravel\\WordPressPlusLaravelServiceProvider"
+	            "Pete\\LaravelImport\\LaravelImportServiceProvider"
 	        ]
 	    }
 	}

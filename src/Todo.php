@@ -1,6 +1,6 @@
 <?php
 
-namespace Pete\WordPressPlusLaravel;
+namespace Pete\LaravelImport;
 
 use Illuminate\Database\Eloquent\Model;
 
