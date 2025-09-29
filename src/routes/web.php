@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Pete\LaravelImport\Http\LaravelImportController as LimportController;
 
 Route::middleware(['web'])
-    ->prefix('wordpress-plus-laravel')
+    ->prefix('laravel')
     ->name('wpl.')
     ->group(function (): void {
         Route::get('/', [LimportController::class, 'index'])->name('index');
