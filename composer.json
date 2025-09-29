@@ -1,0 +1,24 @@
+{
+    "name": "peteconsuegra/wordpress-plus-laravel-plugin",
+    "description": "A WordPress Plus Laravel plugin for WordPress Pete",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pedro Consuegra",
+            "email": "pedroconsuegrat@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Pete\\WordPressPlusLaravel\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+	"extra": {
+	    "laravel": {
+	        "providers": [
+	            "Pete\\WordPressPlusLaravel\\WordPressPlusLaravelServiceProvider"
+	        ]
+	    }
+	}
+}
